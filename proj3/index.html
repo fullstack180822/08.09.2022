@@ -23,7 +23,8 @@
         .p4 {
           font-family: Fantasy; font-size: 48px;
           font-weight: bold; color: rgba(100, 100, 100, 0.149);
-          text-transform: uppercase
+          text-transform: uppercase;
+          text-align: center;
         }        
         .img_css {
           background-image: url('images/download.png');
@@ -31,19 +32,31 @@
           background-position: center;
           background-size: 25%;
         }       
+        #pretty_button {
+          background-color: #4CAF50;
+          border: 3px solid purple;
+          border-radius: 10px;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          padding: 10px;
+          margin-left: 100px;
+        }
     </style>
 
 </head>
 
-<body >
+<body style="margin-left: 30px">
     <p class="img_css">hello <br/>hello
       hello <br/>hellohello <br/>hello
       hello <br/>hellohello <br/>hello</p>
-    <p class="p2">hello </p>
+    <p class="p2" style="padding:10px">hello </p>
     <p class="p3">hello again</p>
     <p class="p4">hello again upper</p>
     <span class="p3">shorter</span>
-    </form>
+    <br /><br /><br />
+    <button>default button</button>
+    <button id="pretty_button">pretty button</button>
 
 </body>
 </html>
