@@ -10,8 +10,11 @@
       #id_iq_label {color:black;font-weight: bold}
       #b_date_label_id {color:orange; font-weight: bold;
                         text-decoration: underline;}
-      h1:hover {color:red}
+      h1:hover {color:red; cursor: cell}
       #id_iq_label:hover {color:red}
+      label:hover { color:green; text-decoration:underline; 
+                        cursor: grab}
+
     </style>
     <!-- 1. in hHTML page, style in head 
             targil- h1 red, label blue
@@ -39,7 +42,7 @@
         //document.getElementById
     </script>
 
-    <h1 class="purple_color">SignUp</h1>
+    <h1 class="purple_color">SignUp [hover]</h1>
     <form name="sigunup_form" action="" >
         <label class="purple_color" for="id_firstname">Last name </label>
         <input type="text" id="id_firstname" name="name_firstname"
