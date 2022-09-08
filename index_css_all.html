@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Targil2</title>
+    <style> 
+      h1 { color:red }
+      label { color:blue }
+      .purple_color { color:purple }
+      .red_bold {color:red; font-weight: bold; }
+      #id_iq_label {color:black;font-weight: bold}
+    </style>
+    <!-- 1. in hHTML page, style in head 
+            targil- h1 red, label blue
+         2. inline 
+            targil- first h1 pink, second label yellow 
+         class selector:
+            .purple_color { color:purple }
+            targil- create class red_bold red color
+                     etgar [+bold] choose an element 
+                     use the class on it inline 
+        #id 
+           targil- birth date - pink bold [+etgar underline]
+        -->
+</head>
+
+<body>
+  
+    <script>
+        //var x = f_name;
+        //document.getElementById
+    </script>
+
+    <h1 class="purple_color">SignUp</h1>
+    <form name="sigunup_form" action="" >
+        <label class="purple_color" for="id_firstname">Last name </label>
+        <input type="text" id="id_firstname" name="name_firstname"
+            placeholder="first-name" required><br />
+        <br />
+        <label style="color:yellow"  for="id_lastname">First name </label>
+        <input type="text" id="id_lastname" name="name_lastname"
+            placeholder="last-name"><br />
+        <br />
+        <label for="id_password">Password &nbsp;</label>
+        <input type="password" id="id_password" name="name_password"
+          placeholder="12345678" required><br />
+        <br />
+        <label id="id_iq_label" for="id_iq">IQ &nbsp;</label>
+        <input type="number" id="id_iq" name="name_iq" min="80" max="300"
+          placeholder="220" required="123"><br />
+        <br />        
+        <label for="b_date">Birth date &nbsp;</label>
+        <input type="date" id="id_bdate" name="name_bdate"><br />
+        <br />       
+
+        <label for="cars">Choose a car:</label>
+        <select class="red_bold" id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="1234">Mitsubishi</option>
+        </select>        
+        <h1 class="purple_color">favorite language:</h1>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br /> <br />
+        <h3>vehicle:</h3>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        &copy;
+        <br /><br />
+        <button type="submit">Send</button>&nbsp;&nbsp;&nbsp;
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
