@@ -8,6 +8,10 @@
       .purple_color { color:purple }
       .red_bold {color:red; font-weight: bold; }
       #id_iq_label {color:black;font-weight: bold}
+      #b_date_label_id {color:orange; font-weight: bold;
+                        text-decoration: underline;}
+      h1:hover {color:red}
+      #id_iq_label:hover {color:red}
     </style>
     <!-- 1. in hHTML page, style in head 
             targil- h1 red, label blue
@@ -19,7 +23,12 @@
                      etgar [+bold] choose an element 
                      use the class on it inline 
         #id 
-           targil- birth date - pink bold [+etgar underline]
+           targil- birth date label
+              - orange bold [+etgar underline]
+        hover:
+          targil- when hovering on label: 
+            change to green + underline 
+            [*etgar: change mouse icon to grabbing]
         -->
 </head>
 
@@ -48,7 +57,7 @@
         <input type="number" id="id_iq" name="name_iq" min="80" max="300"
           placeholder="220" required="123"><br />
         <br />        
-        <label for="b_date">Birth date &nbsp;</label>
+        <label id="b_date_label_id" for="b_date">Birth date &nbsp;</label>
         <input type="date" id="id_bdate" name="name_bdate"><br />
         <br />       
 
